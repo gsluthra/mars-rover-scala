@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e74bfd8e-5e52-480d-afcf-f8deb09c648c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/rover/MarsRover.scala" afterPath="$PROJECT_DIR$/src/main/scala/rover/MarsRover.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/parser/StringCommandParser.scala" afterPath="$PROJECT_DIR$/src/main/scala/parser/StringCommandParser.scala" />
-    </list>
+    <list default="true" id="e74bfd8e-5e52-480d-afcf-f8deb09c648c" name="Default" comment="" />
     <ignored path="scala-explore.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
