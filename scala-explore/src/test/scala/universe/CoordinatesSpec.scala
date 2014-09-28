@@ -23,18 +23,4 @@ class CoordinatesSpec extends FlatSpec with ShouldMatchers {
     newC should be === Coordinates(3,4)
   }
 
-
-  "Coordinates" should "be able to check within Bounds" in {
-    Coordinates(20, 20).withinBounds(Coordinates(10,10)) should be === true
-  }
-
-  "Coordinates" should "should not be in bound for x" in {
-    Coordinates(20, 20).withinBounds(Coordinates(21,10)) should be === false
-  }
-
-
-  "Coordinates" should "should not be in bound for y" in {
-    Coordinates(20, 20).withinBounds(Coordinates(5,22)) should be === false
-  }
-
 }
