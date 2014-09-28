@@ -1,5 +1,5 @@
-mars-rover-scala
-================
+MARS ROVER Solution in SCALA
+================================
 
 Mars Rover in Scala. Please refer to Priyank's blog to understand the details of the design and solution: 
 [Decoding ThoughtWorks Coding Problems](http://priyaaank.tumblr.com/post/95095165285/decoding-thoughtworks-coding-problems)
@@ -11,10 +11,11 @@ To compile:
 3. run command `test`
 4. I have not written a main(). You can check inputs/outputs by modifying the MarsRoverSpec.scala in test folder
 
-NOTE: 
+NOTE:
+
 1. Your machine needs to have Java 7 and Scala 2.11 pre-installed, along with SBT
 
-=====================================
+
 MARS ROVER PROBLEM
 =====================================
 
