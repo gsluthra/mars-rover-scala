@@ -1,3 +1,5 @@
+package rover
+
 import org.scalatest._
 import org.scalatest.matchers.ShouldMatchers
 import universe._
@@ -58,6 +60,26 @@ class MarsRoverSpec extends FlatSpec with ShouldMatchers {
   "MarsRover" should " not fall off the plateau in WEST direction when asked to move" in {
     val rover = MarsRover(plateau_20_20, Coordinates(2, 4), WEST)
     rover.move().move().move().currentLocation should be === "(0, 4, W)"
+  }
+
+ "MarsRover" should " be able to run using multiple commands and not fall over" in {
+    val plateau = Plateau(topRight = Coordinates(5,5))
+    val rover = MarsRover(plateau, Coordinates(3, 3), EAST)
+    val newRover = rover.run("MMRMMRMRRM")
+    newRover.currentLocation should be === "(5, 1, E)"
+  }
+
+ "MarsRover" should " be able to run using multiple commands" in {
+    val rover = MarsRover(plateau_20_20, Coordinates(3, 3), EAST)
+    val newRover = rover.run("MMMMRMMR")
+    newRover.currentLocation should be === "(7, 1, W)"
+  }
+
+
+ "MarsRover" should " should not fail for null" in {
+    val rover = MarsRover(plateau_20_20, Coordinates(3, 3), EAST)
+    val newRover = rover.run(null)
+    newRover.currentLocation should be === "(3, 3, E)"
   }
 
 

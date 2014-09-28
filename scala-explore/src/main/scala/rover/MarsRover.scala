@@ -1,6 +1,15 @@
+package rover
+
+import commands.RoverCommand
+import parser.StringCommandParser
 import universe._
 
 case class MarsRover(plateau: Plateau, currentPoint: Coordinates, face: Direction){
+  def run(commandString: String) = {
+    val commands: Seq[RoverCommand] = StringCommandParser(Option(commandString)).commands
+    commands.foldLeft(this)((rover, command) => command.execute(rover))
+  }
+
   def move() = {
 
     val newCoordinate = face match {
